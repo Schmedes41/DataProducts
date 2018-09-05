@@ -1,0 +1,32 @@
+---
+title: "Coin Flip Probability"
+author: "Troy Schmid"
+date: "September 5, 2018"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+
+Hello and welcome to my 5-page required presentation.  
+
+## Step 1
+
+This app takes a user-selected integer and returns a probability based on that integer.
+
+## Calculation Explanation
+
+The integer selected determines how many heads the user would like to calculate the probability of within 20 coinflips.  Any adjustment to the slider will automatically recalculate the probability. 
+
+
+## Visual Example
+Here is an example of the final output: 
+
+```{r prob}
+paste("Probability of happening: ", dbinom(10, 20, 0.5), "%")
+```
+
+## Thank you for viewing my presentation.  I hope you find my app to be useful.
